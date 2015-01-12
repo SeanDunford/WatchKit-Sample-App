@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4732E47C1A63A2CF002C1969 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4732E47B1A63A2CF002C1969 /* HomeView.swift */; };
 		479A20271A61C73E00976B6C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
 		47A902BB1A342868004812C7 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
 		47D387881A318A2E0074A1AA /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA883B61A1CB87300C53ECE /* WatchKit.framework */; };
@@ -30,7 +31,6 @@
 		7B876BCA1A1CA05900A76FAF /* BitWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B876BB31A1CA05900A76FAF /* BitWatchKit.framework */; };
 		7B876BCB1A1CA05900A76FAF /* BitWatchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B876BB31A1CA05900A76FAF /* BitWatchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B876BD31A1CA0ED00A76FAF /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B876BD21A1CA0ED00A76FAF /* Tracker.swift */; };
-		7BA883AF1A1CAFB500C53ECE /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4732E47B1A63A2CF002C1969 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		47A902BA1A342868004812C7 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerModel.swift; path = "../BitWatch WatchKit Extension/TimerModel.swift"; sourceTree = "<group>"; };
 		47D387871A318A2E0074A1AA /* BitWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BitWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D3878B1A318A2E0074A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		7B876BB71A1CA05900A76FAF /* BitWatchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitWatchKit.h; sourceTree = "<group>"; };
 		7B876BD21A1CA0ED00A76FAF /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		7BA883AD1A1CABEE00C53ECE /* BitWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BitWatch.entitlements; sourceTree = "<group>"; };
-		7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		7BA883B61A1CB87300C53ECE /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -203,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				63F185B51A61C3130020C193 /* HomeViewController.swift */,
+				4732E47B1A63A2CF002C1969 /* HomeView.swift */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -235,7 +236,6 @@
 			children = (
 				63F185B41A61C2B20020C193 /* HomeViewController */,
 				7B876B691A1C9F2D00A76FAF /* AppDelegate.swift */,
-				7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */,
 				7B876B701A1C9F2D00A76FAF /* Images.xcassets */,
 				7B876B721A1C9F2D00A76FAF /* LaunchScreen.xib */,
 				7B876B6D1A1C9F2D00A76FAF /* Main.storyboard */,
@@ -481,7 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA883AF1A1CAFB500C53ECE /* PriceViewController.swift in Sources */,
+				4732E47C1A63A2CF002C1969 /* HomeView.swift in Sources */,
 				7B876B6A1A1C9F2D00A76FAF /* AppDelegate.swift in Sources */,
 				63F185B61A61C3130020C193 /* HomeViewController.swift in Sources */,
 			);
