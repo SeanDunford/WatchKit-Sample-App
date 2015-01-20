@@ -17,9 +17,12 @@ class PausedController: WKInterfaceController {
     @IBOutlet weak var workTimer: WKInterfaceTimer!
     @IBOutlet weak var restTimer: WKInterfaceTimer!
     
-    override init(context: AnyObject?) {
+    
+    
+    
+    override init() {
         // Initialize variables here.
-        super.init(context: context)
+        super.init()
         
         // Configure interface objects here.
         NSLog("%@ init", self)
@@ -41,6 +44,7 @@ class PausedController: WKInterfaceController {
 //        self.pushControllerWithName("RunningController", context: timerObj)
         self.presentControllerWithName("RunningController", context: timerObj)
     }
+    
     func initTimers(){
         workTimer.setDate(NSDate().dateByAddingTimeInterval(timerObj.getWaitSeconds()))
         restTimer.setDate(NSDate().dateByAddingTimeInterval(timerObj.getRestSeconds()))

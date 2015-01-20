@@ -18,10 +18,9 @@ class RunningController: WKInterfaceController {
     var getReadyText = "Get Ready!!2!"
     var state = 0
     
-    override init(context: AnyObject?) {
+    override init() {
         // Initialize variables here.
-        super.init(context: context)
-        timerObj = context? as TimerModel
+        super.init()
         // Configure interface objects here.
         NSLog("%@ init", self)
     }

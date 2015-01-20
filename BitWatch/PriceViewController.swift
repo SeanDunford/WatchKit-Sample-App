@@ -10,52 +10,26 @@ import UIKit
 import BitWatchKit
 
 class PriceViewController: UIViewController {
-  
-  @IBOutlet weak var dateLabel: UILabel!
-  @IBOutlet weak var priceLabel: UILabel!
-  @IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var horizontalLayoutConstraint: NSLayoutConstraint!
-  
-  let tracker = Tracker()
-  let xOffset: CGFloat = -22
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    var timer: NSTimer!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.tintColor = UIColor.blackColor()
+    var screenSize: CGRect = UIScreen.mainScreen().bounds;
+    var screenWidth = screenSize.width;
+    var screenHeight = screenSize.height;
     
-    horizontalLayoutConstraint.constant = 0
+    self.timeLabel.adjustsFontSizeToFitWidth = true;
     
-    let originalPrice = tracker.cachedPrice()
-    updateDate(tracker.cachedDate())
-    updatePrice(originalPrice)
-    tracker.requestPrice { (price, error) -> () in
-      if error? == nil {
-        self.updateDate(NSDate())
-        self.updateImage(originalPrice, newPrice: price!)
-        self.updatePrice(price!)
-      }
-    }
+    timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true);
+    var obj: Tracker = Tracker()
+    var obj2: TimerModel = TimerModel()
+    
   }
-  
-  private func updateDate(date: NSDate) {
-    self.dateLabel.text = "Last updated \(Tracker.dateFormatter.stringFromDate(date))"
-  }
-  
-  private func updateImage(originalPrice: NSNumber, newPrice: NSNumber) {
-    if originalPrice.isEqualToNumber(newPrice) {
-      horizontalLayoutConstraint.constant = 0
-    } else {
-      if newPrice.doubleValue > originalPrice.doubleValue {
-        imageView.image = UIImage(named: "Up")
-      } else {
-        imageView.image = UIImage(named: "Down")
-      }
-      horizontalLayoutConstraint.constant = xOffset
-    }
-  }
-  
-  private func updatePrice(price: NSNumber) {
-    self.priceLabel.text = Tracker.priceFormatter.stringFromNumber(price)
-  }
+
 }

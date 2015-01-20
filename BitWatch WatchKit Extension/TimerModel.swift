@@ -8,8 +8,10 @@
 
 import Foundation
 
-var defaultWSecs = 901.00
-var defaultRSecs = 301.00
+//var defaultWSecs = 901.00
+//var defaultRSecs = 301.00
+var defaultWSecs = 121.00
+var defaultRSecs = 61.00
 var defaultSSecs = 3.00
 public class TimerModel: NSObject {
 
@@ -17,7 +19,7 @@ public class TimerModel: NSObject {
     private var rsecs: Double = defaultRSecs
     private var ssecs: Double = defaultSSecs
     
-    override init() {
+    public override init() {
         super.init()
     }
     public func setWorkSeconds(secs: Double){

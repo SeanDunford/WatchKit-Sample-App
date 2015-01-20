@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47042E901A6D09380004D163 /* BWCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47042E8E1A6D09380004D163 /* BWCircularSlider.swift */; };
+		47042E911A6D09380004D163 /* BWCircularSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */; };
+		47042E931A6E48AC0004D163 /* xBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 47042E921A6E48AC0004D163 /* xBtn.png */; };
+		4725A5C71A6B7E2B001676FC /* UIColor+BitWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725A5C61A6B7E2B001676FC /* UIColor+BitWatch.swift */; };
+		4725A5C91A6B7FDC001676FC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725A5C81A6B7FDC001676FC /* ContainerView.swift */; };
+		479A20271A61C73E00976B6C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
 		47A902BB1A342868004812C7 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
+		47AC90F61A6B7870007F5BC3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC90F51A6B7870007F5BC3 /* HomeView.swift */; };
+		47AC90F81A6B7932007F5BC3 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC90F71A6B7932007F5BC3 /* WorkView.swift */; };
+		47AC90FA1A6B793E007F5BC3 /* RestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC90F91A6B793E007F5BC3 /* RestView.swift */; };
+		47AC90FC1A6B7A01007F5BC3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC90FB1A6B7A01007F5BC3 /* SettingsView.swift */; };
 		47D387881A318A2E0074A1AA /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA883B61A1CB87300C53ECE /* WatchKit.framework */; };
 		47D3878E1A318A2E0074A1AA /* PausedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D3878D1A318A2E0074A1AA /* PausedController.swift */; };
 		47D387901A318A2E0074A1AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D3878F1A318A2E0074A1AA /* NotificationController.swift */; };
@@ -18,6 +28,10 @@
 		47D387A41A318A2E0074A1AA /* BitWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 47D387871A318A2E0074A1AA /* BitWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		47D387AC1A31A3CF0074A1AA /* InterfaceController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D387AB1A31A3CF0074A1AA /* InterfaceController.storyboard */; };
 		47D387AE1A3422D30074A1AA /* RunningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D387AD1A3422D30074A1AA /* RunningController.swift */; };
+		6306FA591A45D28400E18868 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6306FA581A45D28400E18868 /* menu-icon.png */; };
+		63A9DF8D1A6AE00000ACDCDF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A9DF8B1A6AD7BA00ACDCDF /* Montserrat-Bold.ttf */; };
+		63A9DF8E1A6AE00600ACDCDF /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A9DF8C1A6AD7BA00ACDCDF /* Montserrat-Regular.ttf */; };
+		63F185B61A61C3130020C193 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F185B51A61C3130020C193 /* HomeViewController.swift */; };
 		7B876B6A1A1C9F2D00A76FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B876B691A1C9F2D00A76FAF /* AppDelegate.swift */; };
 		7B876B6F1A1C9F2D00A76FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B876B6D1A1C9F2D00A76FAF /* Main.storyboard */; };
 		7B876B711A1C9F2D00A76FAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B876B701A1C9F2D00A76FAF /* Images.xcassets */; };
@@ -26,7 +40,6 @@
 		7B876BCA1A1CA05900A76FAF /* BitWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B876BB31A1CA05900A76FAF /* BitWatchKit.framework */; };
 		7B876BCB1A1CA05900A76FAF /* BitWatchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B876BB31A1CA05900A76FAF /* BitWatchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B876BD31A1CA0ED00A76FAF /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B876BD21A1CA0ED00A76FAF /* Tracker.swift */; };
-		7BA883AF1A1CAFB500C53ECE /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +92,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		47A902BA1A342868004812C7 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		47042E8E1A6D09380004D163 /* BWCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWCircularSlider.swift; path = ../../circularSlide/TB_CustomControlsSwift/BWCircularSlider.swift; sourceTree = "<group>"; };
+		47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWCircularSliderView.swift; path = ../../circularSlide/TB_CustomControlsSwift/BWCircularSliderView.swift; sourceTree = "<group>"; };
+		47042E921A6E48AC0004D163 /* xBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xBtn.png; path = ../../../Downloads/xBtn.png; sourceTree = "<group>"; };
+		4725A5C61A6B7E2B001676FC /* UIColor+BitWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+BitWatch.swift"; sourceTree = "<group>"; };
+		4725A5C81A6B7FDC001676FC /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		47A902BA1A342868004812C7 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerModel.swift; path = "../BitWatch WatchKit Extension/TimerModel.swift"; sourceTree = "<group>"; };
+		47AC90F51A6B7870007F5BC3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47AC90F71A6B7932007F5BC3 /* WorkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		47AC90F91A6B793E007F5BC3 /* RestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
+		47AC90FB1A6B7A01007F5BC3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		47D387871A318A2E0074A1AA /* BitWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BitWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D3878B1A318A2E0074A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D3878C1A318A2E0074A1AA /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
@@ -92,6 +114,11 @@
 		47D387A01A318A2E0074A1AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		47D387AB1A31A3CF0074A1AA /* InterfaceController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InterfaceController.storyboard; sourceTree = "<group>"; };
 		47D387AD1A3422D30074A1AA /* RunningController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningController.swift; sourceTree = "<group>"; };
+		6306FA581A45D28400E18868 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		63A9DF8B1A6AD7BA00ACDCDF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		63A9DF8C1A6AD7BA00ACDCDF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		63F185B51A61C3130020C193 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63FB9F551A37781D004B27ED /* BitWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "BitWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		7B876B641A1C9F2D00A76FAF /* BitWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B876B681A1C9F2D00A76FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B876B691A1C9F2D00A76FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +130,6 @@
 		7B876BB71A1CA05900A76FAF /* BitWatchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitWatchKit.h; sourceTree = "<group>"; };
 		7B876BD21A1CA0ED00A76FAF /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		7BA883AD1A1CABEE00C53ECE /* BitWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BitWatch.entitlements; sourceTree = "<group>"; };
-		7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		7BA883B61A1CB87300C53ECE /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -134,16 +160,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47042E8D1A6D091C0004D163 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				47042E8E1A6D09380004D163 /* BWCircularSlider.swift */,
+				47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		4725A5C51A6B7E13001676FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4725A5C61A6B7E2B001676FC /* UIColor+BitWatch.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		47AC90F41A6B7856007F5BC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47AC90F51A6B7870007F5BC3 /* HomeView.swift */,
+				47AC90F71A6B7932007F5BC3 /* WorkView.swift */,
+				47AC90F91A6B793E007F5BC3 /* RestView.swift */,
+				47AC90FB1A6B7A01007F5BC3 /* SettingsView.swift */,
+				4725A5C81A6B7FDC001676FC /* ContainerView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		47D387891A318A2E0074A1AA /* BitWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				63FB9F551A37781D004B27ED /* BitWatch WatchKit Extension.entitlements */,
 				47D387AD1A3422D30074A1AA /* RunningController.swift */,
 				47D3878D1A318A2E0074A1AA /* PausedController.swift */,
 				47D3878F1A318A2E0074A1AA /* NotificationController.swift */,
 				47D387911A318A2E0074A1AA /* GlanceController.swift */,
 				47D387931A318A2E0074A1AA /* Images.xcassets */,
 				47D3878A1A318A2E0074A1AA /* Supporting Files */,
-				47A902BA1A342868004812C7 /* TimerModel.swift */,
 			);
 			path = "BitWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -175,6 +230,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6306FA541A45CBC100E18868 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47042E921A6E48AC0004D163 /* xBtn.png */,
+				6306FA581A45D28400E18868 /* menu-icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6306FA571A45D20300E18868 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				63A9DF8B1A6AD7BA00ACDCDF /* Montserrat-Bold.ttf */,
+				63A9DF8C1A6AD7BA00ACDCDF /* Montserrat-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		63F185B41A61C2B20020C193 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47AC90F41A6B7856007F5BC3 /* Views */,
+				63F185B51A61C3130020C193 /* HomeViewController.swift */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
 		7B876B5B1A1C9F2D00A76FAF = {
 			isa = PBXGroup;
 			children = (
@@ -201,11 +283,15 @@
 		7B876B661A1C9F2D00A76FAF /* BitWatch */ = {
 			isa = PBXGroup;
 			children = (
+				47042E8D1A6D091C0004D163 /* Slider */,
+				4725A5C51A6B7E13001676FC /* Extension */,
+				63F185B41A61C2B20020C193 /* HomeViewController */,
 				7B876B691A1C9F2D00A76FAF /* AppDelegate.swift */,
-				7BA883AE1A1CAFB500C53ECE /* PriceViewController.swift */,
 				7B876B701A1C9F2D00A76FAF /* Images.xcassets */,
 				7B876B721A1C9F2D00A76FAF /* LaunchScreen.xib */,
 				7B876B6D1A1C9F2D00A76FAF /* Main.storyboard */,
+				6306FA541A45CBC100E18868 /* Images */,
+				6306FA571A45D20300E18868 /* Fonts */,
 				7B876B671A1C9F2D00A76FAF /* Supporting Files */,
 			);
 			path = BitWatch;
@@ -223,6 +309,7 @@
 		7B876BB41A1CA05900A76FAF /* BitWatchKit */ = {
 			isa = PBXGroup;
 			children = (
+				47A902BA1A342868004812C7 /* TimerModel.swift */,
 				7B876BB71A1CA05900A76FAF /* BitWatchKit.h */,
 				7B876BD21A1CA0ED00A76FAF /* Tracker.swift */,
 				7B876BB51A1CA05900A76FAF /* Supporting Files */,
@@ -343,15 +430,22 @@
 				TargetAttributes = {
 					47D387861A318A2E0074A1AA = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = CB8A2UT3FF;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					47D387961A318A2E0074A1AA = {
 						CreatedOnToolsVersion = 6.2;
 					};
 					7B876B631A1C9F2D00A76FAF = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = CB8A2UT3FF;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -404,9 +498,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47042E931A6E48AC0004D163 /* xBtn.png in Resources */,
+				63A9DF8E1A6AE00600ACDCDF /* Montserrat-Regular.ttf in Resources */,
+				63A9DF8D1A6AE00000ACDCDF /* Montserrat-Bold.ttf in Resources */,
 				7B876B6F1A1C9F2D00A76FAF /* Main.storyboard in Resources */,
 				7B876B741A1C9F2D00A76FAF /* LaunchScreen.xib in Resources */,
 				7B876B711A1C9F2D00A76FAF /* Images.xcassets in Resources */,
+				6306FA591A45D28400E18868 /* menu-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +534,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA883AF1A1CAFB500C53ECE /* PriceViewController.swift in Sources */,
+				4725A5C71A6B7E2B001676FC /* UIColor+BitWatch.swift in Sources */,
+				4725A5C91A6B7FDC001676FC /* ContainerView.swift in Sources */,
+				47AC90FC1A6B7A01007F5BC3 /* SettingsView.swift in Sources */,
+				47AC90F61A6B7870007F5BC3 /* HomeView.swift in Sources */,
+				47042E901A6D09380004D163 /* BWCircularSlider.swift in Sources */,
 				7B876B6A1A1C9F2D00A76FAF /* AppDelegate.swift in Sources */,
+				47AC90F81A6B7932007F5BC3 /* WorkView.swift in Sources */,
+				47AC90FA1A6B793E007F5BC3 /* RestView.swift in Sources */,
+				63F185B61A61C3130020C193 /* HomeViewController.swift in Sources */,
+				47042E911A6D09380004D163 /* BWCircularSliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479A20271A61C73E00976B6C /* TimerModel.swift in Sources */,
 				7B876BD31A1CA0ED00A76FAF /* Tracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +599,7 @@
 		47D387A51A318A2E0074A1AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BitWatch WatchKit Extension/BitWatch WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -501,6 +609,7 @@
 				INFOPLIST_FILE = "BitWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -508,11 +617,13 @@
 		47D387A61A318A2E0074A1AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BitWatch WatchKit Extension/BitWatch WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BitWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -566,7 +677,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Wagner (3685K98G2T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Wagner (3685K98G2T)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -586,6 +698,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3aa61d01-a459-469e-814e-469d4e902a9f";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,7 +722,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Wagner (CB8A2UT3FF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Wagner (CB8A2UT3FF)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -622,6 +736,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3aa61d01-a459-469e-814e-469d4e902a9f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -632,13 +747,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitWatch/BitWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BitWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -646,13 +764,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitWatch/BitWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BitWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

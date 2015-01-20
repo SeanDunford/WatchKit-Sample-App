@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14A388a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
@@ -10,9 +10,10 @@
             <objects>
                 <controller identifier="PausedController" title="PausedController" id="AgC-eL-Hgc" customClass="PausedController" customModule="BitWatch_WatchKit_Extension">
                     <items>
-                        <button width="1" height="0.20000000000000015" alignment="left" verticalAlignment="bottom" title="Go!" id="qgU-SD-Di1">
+                        <button width="1" height="0.20000000000000015" alignment="left" verticalAlignment="bottom" title="Begin" id="qgU-SD-Di1">
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                             <connections>
                                 <action selector="GoButtonPressed" destination="AgC-eL-Hgc" id="YLk-P4-Ao4"/>
                             </connections>
