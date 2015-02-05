@@ -11,8 +11,13 @@
 		47042E911A6D09380004D163 /* BWCircularSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */; };
 		4717B87C1A75DD5500FD2EA3 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4717B87A1A75DD5500FD2EA3 /* menu-icon.png */; };
 		4717B87D1A75DD5500FD2EA3 /* xbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4717B87B1A75DD5500FD2EA3 /* xbtn.png */; };
+		4717B8FF1A81F92B00FD2EA3 /* iWatchMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717B8FE1A81F92B00FD2EA3 /* iWatchMsgController.swift */; };
+		4717B90A1A81FB6F00FD2EA3 /* BitWatch-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 4717B9091A81FB6F00FD2EA3 /* BitWatch-Bridging-Header.h */; };
 		4725A5C71A6B7E2B001676FC /* UIColor+BitWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725A5C61A6B7E2B001676FC /* UIColor+BitWatch.swift */; };
 		4725A5C91A6B7FDC001676FC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725A5C81A6B7FDC001676FC /* ContainerView.swift */; };
+		4783C1C31A81FD6400D28097 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = 4783C1C11A81FD6400D28097 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4783C1C41A81FD6400D28097 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 4783C1C21A81FD6400D28097 /* MMWormhole.m */; };
+		4783C1C51A821C4B00D28097 /* iWatchMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717B8FE1A81F92B00FD2EA3 /* iWatchMsgController.swift */; };
 		479A20271A61C73E00976B6C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
 		47A902BB1A342868004812C7 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A902BA1A342868004812C7 /* TimerModel.swift */; };
 		47AC90F61A6B7870007F5BC3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC90F51A6B7870007F5BC3 /* HomeView.swift */; };
@@ -95,8 +100,12 @@
 		47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWCircularSliderView.swift; path = ../../circularSlide/TB_CustomControlsSwift/BWCircularSliderView.swift; sourceTree = "<group>"; };
 		4717B87A1A75DD5500FD2EA3 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon.png"; path = "../../../Desktop/menu-icon.png"; sourceTree = "<group>"; };
 		4717B87B1A75DD5500FD2EA3 /* xbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xbtn.png; path = ../../../Desktop/xbtn.png; sourceTree = "<group>"; };
+		4717B8FE1A81F92B00FD2EA3 /* iWatchMsgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iWatchMsgController.swift; sourceTree = "<group>"; };
+		4717B9091A81FB6F00FD2EA3 /* BitWatch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BitWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		4725A5C61A6B7E2B001676FC /* UIColor+BitWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+BitWatch.swift"; sourceTree = "<group>"; };
 		4725A5C81A6B7FDC001676FC /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		4783C1C11A81FD6400D28097 /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = BitWatchKit/MMWormhole.h; sourceTree = SOURCE_ROOT; };
+		4783C1C21A81FD6400D28097 /* MMWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = BitWatchKit/MMWormhole.m; sourceTree = SOURCE_ROOT; };
 		47A902BA1A342868004812C7 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerModel.swift; path = "../BitWatch WatchKit Extension/TimerModel.swift"; sourceTree = "<group>"; };
 		47AC90F51A6B7870007F5BC3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		47AC90F71A6B7932007F5BC3 /* WorkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
@@ -165,6 +174,24 @@
 				47042E8F1A6D09380004D163 /* BWCircularSliderView.swift */,
 			);
 			name = Slider;
+			sourceTree = "<group>";
+		};
+		4717B8FD1A81F91400FD2EA3 /* MessagePassing */ = {
+			isa = PBXGroup;
+			children = (
+				4717B8FE1A81F92B00FD2EA3 /* iWatchMsgController.swift */,
+			);
+			name = MessagePassing;
+			path = ../BitWatch;
+			sourceTree = "<group>";
+		};
+		4717B9001A81FA6600FD2EA3 /* MMWormhole */ = {
+			isa = PBXGroup;
+			children = (
+				4783C1C11A81FD6400D28097 /* MMWormhole.h */,
+				4783C1C21A81FD6400D28097 /* MMWormhole.m */,
+			);
+			path = MMWormhole;
 			sourceTree = "<group>";
 		};
 		4725A5C51A6B7E13001676FC /* Extension */ = {
@@ -291,6 +318,7 @@
 				6306FA541A45CBC100E18868 /* Images */,
 				6306FA571A45D20300E18868 /* Fonts */,
 				7B876B671A1C9F2D00A76FAF /* Supporting Files */,
+				4717B9091A81FB6F00FD2EA3 /* BitWatch-Bridging-Header.h */,
 			);
 			path = BitWatch;
 			sourceTree = "<group>";
@@ -307,6 +335,8 @@
 		7B876BB41A1CA05900A76FAF /* BitWatchKit */ = {
 			isa = PBXGroup;
 			children = (
+				4717B8FD1A81F91400FD2EA3 /* MessagePassing */,
+				4717B9001A81FA6600FD2EA3 /* MMWormhole */,
 				47A902BA1A342868004812C7 /* TimerModel.swift */,
 				7B876BB71A1CA05900A76FAF /* BitWatchKit.h */,
 				7B876BB51A1CA05900A76FAF /* Supporting Files */,
@@ -338,6 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B876BB81A1CA05900A76FAF /* BitWatchKit.h in Headers */,
+				4783C1C31A81FD6400D28097 /* MMWormhole.h in Headers */,
+				4717B90A1A81FB6F00FD2EA3 /* BitWatch-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +459,7 @@
 				TargetAttributes = {
 					47D387861A318A2E0074A1AA = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = UGES5X6V6E;
+						DevelopmentTeam = 5DJNDYCH54;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -439,7 +471,7 @@
 					};
 					7B876B631A1C9F2D00A76FAF = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = CB8A2UT3FF;
+						DevelopmentTeam = 5DJNDYCH54;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -538,6 +570,7 @@
 				47042E901A6D09380004D163 /* BWCircularSlider.swift in Sources */,
 				7B876B6A1A1C9F2D00A76FAF /* AppDelegate.swift in Sources */,
 				47AC90F81A6B7932007F5BC3 /* WorkView.swift in Sources */,
+				4717B8FF1A81F92B00FD2EA3 /* iWatchMsgController.swift in Sources */,
 				47AC90FA1A6B793E007F5BC3 /* RestView.swift in Sources */,
 				63F185B61A61C3130020C193 /* HomeViewController.swift in Sources */,
 				47042E911A6D09380004D163 /* BWCircularSliderView.swift in Sources */,
@@ -548,6 +581,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4783C1C51A821C4B00D28097 /* iWatchMsgController.swift in Sources */,
+				4783C1C41A81FD6400D28097 /* MMWormhole.m in Sources */,
 				479A20271A61C73E00976B6C /* TimerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +731,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "3aa61d01-a459-469e-814e-469d4e902a9f";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BitWatch/BitWatch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -734,6 +770,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "3aa61d01-a459-469e-814e-469d4e902a9f";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BitWatch/BitWatch-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -792,6 +829,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -813,6 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

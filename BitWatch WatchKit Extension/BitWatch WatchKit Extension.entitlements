@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.alphastory.bitwatch</string>
+		<string>group.tempo</string>
 	</array>
 </dict>
 </plist>

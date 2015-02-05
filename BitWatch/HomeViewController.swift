@@ -70,8 +70,21 @@ class HomeViewController: UIViewController, ADBannerViewDelegate, SettingsViewDe
     required init(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
     }
+    func monitorDefaults(){
+        NSNotificationCenter
+            .defaultCenter()
+            .addObserver(
+                self, selector: "defualtsChanged:",
+                name: NSUserDefaultsDidChangeNotification,
+                object: nil)
+    }
+    func defualtsChanged(notification: NSNotification){
+        var defaults: NSUserDefaults = notification.object as NSUserDefaults
+        println("notification received")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        monitorDefaults()
         
         height = self.view.frame.size.height;
         width = self.view.frame.size.width;
@@ -232,7 +245,7 @@ class HomeViewController: UIViewController, ADBannerViewDelegate, SettingsViewDe
     }
 
     func enableScroll(enable: Bool){
-        self.containerView.enableScrolling(enable)
+        self.containerView.disableScrolling = !enable
     }
     
     override func didReceiveMemoryWarning() {

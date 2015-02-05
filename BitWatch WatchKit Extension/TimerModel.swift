@@ -19,8 +19,12 @@ public class TimerModel: NSObject {
     private var ssecs: Int = defaultSSecs
     private var iAmnt: Int = defaultIntervals
     
+    private var wormhole: iWatchMsgController!
+    
+    private var timersUpdatedCb: (() -> Void)?
+    
     private var defaults = NSUserDefaults()
-    private var group = "group.alphastory.bitwatch"
+    private var group = "group.tempo"
     
     private var wkey = "work Timer Value"
     private var rkey = "rest Timer Value"
@@ -33,19 +37,31 @@ public class TimerModel: NSObject {
         super.init()
         setupNSDefaults()
         getStoredValues()
-        setupKVO()
+        //setupKVO()   this didn't seem to be working in swift
+        setupWormhole()
+    }
+    private func setupWormhole(){
+        wormhole = iWatchMsgController()
     }
     private func setupKVO(){
+        //https://github.com/mutualmobile/MMWormhole
         defaults.addObserver(self, forKeyPath: wkey, options: NSKeyValueObservingOptions.New, context: nil)
         defaults.addObserver(self, forKeyPath: rkey, options: NSKeyValueObservingOptions.New, context: nil)
         defaults.addObserver(self, forKeyPath: skey, options: NSKeyValueObservingOptions.New, context: nil)
         defaults.addObserver(self, forKeyPath: ikey, options: NSKeyValueObservingOptions.New, context: nil)
     }
+    public func setTimersUpdatedCb(cb:()->Void){
+        timersUpdatedCb = cb
+    }
     override public func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         NSLog("Output : \(object) changed property \(keyPath) to value \(change)");
+        timersUpdatedCb!()
     }
     private func setupNSDefaults(){
         defaults = NSUserDefaults(suiteName: group)!
+    }
+    public func update(){
+        getStoredValues()
     }
     private func getStoredValues(){
         if(defaults.integerForKey(wkey) == 0){
@@ -67,8 +83,8 @@ public class TimerModel: NSObject {
         defaults.didChangeValueForKey(skey)
         defaults.didChangeValueForKey(ikey)
         
-        
         defaults.synchronize()
+        wormhole.updateWatchTimers()
     }
     public func setWorkSeconds(secs: Int){
         wsecs = (secs > 0 ) ? secs : wsecs

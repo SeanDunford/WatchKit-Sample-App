@@ -12,6 +12,8 @@ import UIKit
 class ContainerView: UIView{
     var scrollView: UIScrollView!
     var menuOpen: Bool = false
+    var disableScrolling = false
+    
     
     var width: CGFloat!
     var height: CGFloat!
@@ -54,15 +56,9 @@ class ContainerView: UIView{
         swipeLeft.direction = UISwipeGestureRecognizerDirection.Left;
         scrollView.addGestureRecognizer(swipeLeft);
     }
-    
-    
-    func swipeRight(){
-    
-    }
-    func swipeLeft(){
-    
-    }
+
     func toggleMenuOpen(){
+        if(disableScrolling){return;}
         if( menuOpen ){
             scrollView.setContentOffset(CGPointMake(0, 0), animated: true);
             menuOpen = false;
@@ -72,6 +68,7 @@ class ContainerView: UIView{
         }
     }
     func viewWasSwiped(gesture: UIGestureRecognizer){
+        if(disableScrolling){return;}
         self.endEditing(true);
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             if( swipeGesture.direction == UISwipeGestureRecognizerDirection.Right){
@@ -82,10 +79,6 @@ class ContainerView: UIView{
                 menuOpen = true;
             }
         }
-    }
-    
-    func enableScrolling(enable:Bool){
-        //I don't know what to do here....
     }
     
     func menuClicked() {
