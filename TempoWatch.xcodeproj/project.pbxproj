@@ -64,6 +64,8 @@
 		47344C101A87490900A4C3FC /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470C59891A872B1300014E14 /* Montserrat-Bold.ttf */; };
 		47344C111A87490900A4C3FC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470C598A1A872B1300014E14 /* Montserrat-Regular.ttf */; };
 		47344C121A87491400A4C3FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47344BD11A87451800A4C3FC /* Main.storyboard */; };
+		476302BE1AAC271D00EF4B1D /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476302BD1AAC271D00EF4B1D /* Reveal.framework */; };
+		476302BF1AAC271D00EF4B1D /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476302BD1AAC271D00EF4B1D /* Reveal.framework */; };
 		63C10A711AAAADBA00AE4902 /* PausedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47344BBA1A8741C000A4C3FC /* PausedController.swift */; };
 /* End PBXBuildFile section */
 
@@ -205,6 +207,7 @@
 		47344BD41A87451800A4C3FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		47344BD71A87451800A4C3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		47344C0E1A87456100A4C3FC /* TempoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		476302BD1AAC271D00EF4B1D /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				470C59A01A872C9A00014E14 /* TempoSharedFramework.framework in Frameworks */,
+				476302BE1AAC271D00EF4B1D /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47344BFD1A87456100A4C3FC /* TempoSharedFramework.framework in Frameworks */,
+				476302BF1AAC271D00EF4B1D /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +274,7 @@
 		470C59131A87284100014E14 /* TempoWatch */ = {
 			isa = PBXGroup;
 			children = (
+				476302BD1AAC271D00EF4B1D /* Reveal.framework */,
 				47344BC01A8743AD00A4C3FC /* TempoWatch.entitlements */,
 				470C59B01A87302F00014E14 /* BWCircularSlider.swift */,
 				470C59B11A87302F00014E14 /* BWCircularSliderView.swift */,
@@ -546,7 +552,7 @@
 				TargetAttributes = {
 					470C59101A87284100014E14 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = CB8A2UT3FF;
+						DevelopmentTeam = 5DJNDYCH54;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -823,7 +829,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "TempoWatch/TempoWatch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -873,13 +879,23 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TempoWatch/TempoWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TempoWatch",
+				);
 				INFOPLIST_FILE = TempoWatch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 			};
 			name = Debug;
 		};
@@ -890,13 +906,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TempoWatch/TempoWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TempoWatch",
+				);
 				INFOPLIST_FILE = TempoWatch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 			};
 			name = Release;
 		};
@@ -982,8 +1002,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "TempoWatch WatchKit Extension/TempoWatch WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -991,7 +1011,7 @@
 				INFOPLIST_FILE = "TempoWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1000,12 +1020,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "TempoWatch WatchKit Extension/TempoWatch WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
 				INFOPLIST_FILE = "TempoWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1016,13 +1036,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TempoWatch/TempoWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TempoWatch",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TempoWatch7.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = TempoWatch;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 			};
 			name = Debug;
 		};
@@ -1032,13 +1062,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TempoWatch/TempoWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Dunford (Y27QAELFK5)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TempoWatch",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TempoWatch7.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TempoWatch;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e7c882a0-5d38-4d2e-80a6-c5f34ef5e016";
 			};
 			name = Release;
 		};
