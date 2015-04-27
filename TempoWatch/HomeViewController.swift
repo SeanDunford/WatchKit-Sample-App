@@ -60,6 +60,9 @@ class HomeViewController: UIViewController, ADBannerViewDelegate, SettingsViewDe
     func setupIAds(){
         self.canDisplayBannerAds = true;
         self.adBannerView = ADBannerView(frame: CGRectMake(0, height - 50, width, 50));
+
+        self.view.addSubview(self.adBannerView);
+        
         self.adBannerView.delegate = self;
         self.adBannerView.hidden = true;
     }
@@ -88,7 +91,7 @@ class HomeViewController: UIViewController, ADBannerViewDelegate, SettingsViewDe
         height = self.view.frame.size.height;
         width = self.view.frame.size.width;
         
-        setupIAds()
+//        setupIAds()
  
         var f: CGRect = CGRectMake(0, 0, width, height - 50)
         containerView = ContainerView(frame: f)
